@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript" src="customerPage.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+</head>
+<body class="background">
+<header class="header" id="header">
+    <div class="site-title">
+        <a class="header_home" href="admin.html">Customer Dashboard</a>
+        <a class="header_nav_link button" href="index.html">Home</a>
+    </div>
+</header>
+<button type="button" id="refresh" style="margin-left: 20px;margin-top: 20px;">Refresh</button>
+<div class="card">
+    <h2>Search for items by Id</h2>
+    <p>What are you looking for today? Search for items by item Id.</p>
+    <form class="card-content" id="search-by-id-form">
+        <p class="form-field">
+            <input type="text" required class="validated-field" id="item-id-field">
+        </p>
+        <button type="button" id="search-id-button">Search</button>
+    </form>
+</div>
+<div class="card">
+    <h2>Search for items by Type</h2>
+    <p>What are you looking for today? Search for items by item name.</p>
+    <form class="card-content" id="search-by-type-form">
+        <p class="form-field">
+            <input type="text" required class="validated-field" id="item-name-field">
+        </p>
+        <button type="button" id="search-type-button">Search</button>
+    </form>
+</div>
+<div class="card" id="result">
+    <h2>Result:</h2>
+    <p id="result-info"></p>
+</div>
+</body>
+</html>

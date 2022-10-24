@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript" src="businessPage.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+</head>
+<body class="background">
+<header class="header" id="header">
+    <div class="site-title">
+        <a class="header_home" href="admin.html">Business Dashboard</a>
+        <a class="header_nav_link button" href="index.html">Home</a>
+    </div>
+</header>
+<button type="button" id="refresh" style="margin-left: 20px;margin-top: 20px;">Refresh</button>
+<div class="card">
+    <h2>Search for items by Id</h2>
+    <p>What are you looking for today? Search for items by item Id.</p>
+    <form class="card-content" id="search-by-id-form">
+        <p class="form-field">
+            <input type="text" required class="validated-field" id="item-id-field">
+        </p>
+        <button type="button" id="search-id-button">Search</button>
+    </form>
+</div>
+<div class="card" id="customer-result">
+    <h2>Result:</h2>
+    <p id="customer-result-info"></p>
+</div>
+<div class="card">
+    <h2>Search for items by Type</h2>
+    <p>What are you looking for today? Search for items by item name.</p>
+    <form class="card-content" id="search-by-type-form">
+        <p class="form-field">
+            <input type="text" required class="validated-field" id="item-name-field">
+        </p>
+        <button type="button" id="search-type-button">Search</button>
+    </form>
+</div>
+<div class="card" id="customer-itemName-result">
+    <h2>Result:</h2>
+    <p id="customer-itemName-result-info"></p>
+</div>
+
+<div class="card">
+    <h2>Add Clothing</h2>
+    <p>To add clothing to the catalog complete the form below.</p>
+    <form class="card-content" id="add-clothing-form">
+        <p class="form-field">
+            <label>Clothing Id</label>
+            <input type="text" required class="validated-field" id="clothing-id" placeholder="clothing id" autofocus>
+        </p>
+        <p class="form-field">
+            <label>Item Name</label>
+            <input type="text" required class="validated-field" id="item-name" placeholder="item name" autofocus>
+        </p>
+        <p class="form-field">
+            <label>In Stock</label>
+            <input type="text" required class="validated-field" id="in-stock" placeholder="true/false?">
+        </p>
+        <p class="form-field">
+            <label>Price</label>
+            <input type="number" required class="validated-field" id="price" placeholder="0">
+        </p>
+        <p class="form-field">
+            <label>Item Size</label>
+            <input type="text" required class="validated-field" id="item-size" placeholder="item size" autofocus>
+        </p>
+        <button type="button" id="add-clothing-button">Add</button>
+    </form>
+</div>
+<div class="card">
+    <h2>Update Clothing</h2>
+    <p>To update clothing to the catalog complete the form below.</p>
+    <form class="card-content" id="update-clothing-form">
+        <p class="form-field">
+            <label>Clothing Id</label>
+            <input type="text" required class="validated-field" id="update-clothing-id" placeholder="clothing id" autofocus>
+        </p>
+        <p class="form-field">
+            <label>Item Name</label>
+            <input type="text" required class="validated-field" id="update-item-name" placeholder="item name" autofocus>
+        </p>
+        <p class="form-field">
+            <label>In Stock</label>
+            <input type="text" required class="validated-field" id="update-in-stock" placeholder="true/false?">
+        </p>
+        <p class="form-field">
+            <label>Price</label>
+            <input type="number" required class="validated-field" id="update-price" placeholder="0">
+        </p>
+        <p class="form-field">
+            <label>Item Size</label>
+            <input type="text" required class="validated-field" id="update-item-size" placeholder="item size" autofocus>
+        </p>
+        <button type="button" id="update-clothing-button">Update</button>
+    </form>
+</div>
+<div class="card">
+    <h2>Delete Clothing</h2>
+    <p>To delete a clothing from the catalog complete the form below.</p>
+    <form class="card-content" id="delete-clothing-form">
+        <p class="form-field">
+            <label>Clothing Id</label>
+            <input type="text" required class="validated-field" id="delete-clothing-id" placeholder="clothing id" autofocus>
+        </p>
+        <button type="button" id="delete-clothing-button">Delete</button>
+    </form>
+</div>
+<div class="card" id="result">
+    <h2>Result:</h2>
+    <p id="result-info"></p>
+</div>
+</body>
+</html>
